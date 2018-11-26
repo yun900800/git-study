@@ -11,3 +11,7 @@ git add study/second.txt
 
 git commit study/second.txt -m 'one log'
 
+git branch develop 创建一个分支
+ 
+git checkout develop 切换到一个分支
+
