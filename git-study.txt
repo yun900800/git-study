@@ -1,0 +1,5 @@
+1、git add 命令学习 提交到index暂存区
+
+2、git commit 命令学习 提交到本地仓库
+
+3、git push origin master 提交到远程仓库
