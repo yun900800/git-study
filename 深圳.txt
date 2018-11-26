@@ -1,1 +1,8 @@
 你的名字是什么，我的名字是深圳
+
+git add . 
+添加当前目录的所有文件
+
+git add 指定文件 
+git add 指定目录 git add study
+
