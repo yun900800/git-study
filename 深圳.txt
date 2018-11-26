@@ -15,3 +15,5 @@ git branch develop 创建一个分支
  
 git checkout develop 切换到一个分支
 
+git checkout -b develop-one 新建并切换到新建分支
+
