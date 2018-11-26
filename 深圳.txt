@@ -6,3 +6,8 @@ git add .
 git add 指定文件 
 git add 指定目录 git add study
 
+
+git add study/second.txt
+
+git commit study/second.txt -m 'one log'
+
