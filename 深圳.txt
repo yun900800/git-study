@@ -21,6 +21,7 @@ git branch --track develop-two develop-one
 
 git fetch origin master 从远程取回master分支
 
+
 //将develop-two合并到master分支的步骤
 1、切换本地分支到主分支   git checkout master
 2、从远程拉回主分支信息 git fetch origin master
@@ -28,3 +29,5 @@ git fetch origin master 从远程取回master分支
 4、解决冲突 
 5、推送到远程仓库  git push origin master
 
+测试 git diff命令 工作区和暂存区之间的区别
+测试 git log 命令 显示当前分支的日志
