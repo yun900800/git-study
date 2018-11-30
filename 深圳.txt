@@ -24,3 +24,5 @@ git fetch origin master 从远程取回master分支
 测试 git diff命令 工作区和暂存区之间的区别
 
 测试 git diff HEAD 命令  显示工作区与当前分支最新commit之间的差异
+
+git clone -b branchName https://www
