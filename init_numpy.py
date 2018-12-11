@@ -99,3 +99,7 @@ one_4_5 = one_20.reshape([4, 5])
 print("-->4行5列<--")
 print (one_4_5)
 
+stus_score = np.array([[80, 88], [82, 81], [84, 75], [86, 83], [75, 81]])
+stus_score = stus_score > 80
+print(stus_score)
+
