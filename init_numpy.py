@@ -150,3 +150,54 @@ print("每一行的方差:")
 result = np.std(stus_score, axis=1)
 print(result)
 
+
+stus_score = np.array([[80, 88], [82, 81], [84, 75], [86, 83], [75, 81]])
+print("加分前:")
+print(stus_score)
+
+# 为所有平时成绩都加5分
+stus_score[:, 0] = stus_score[:, 0]+5
+print("加分后:")
+print(stus_score)
+
+stus_score = np.array([[80, 88], [82, 81], [84, 75], [86, 83], [75, 81]])
+print("减半前:")
+print(stus_score)
+
+# 平时成绩减半
+stus_score[:, 1] = stus_score[:, 1]*0.5
+print("减半后:")
+print(stus_score)
+
+stus_score = np.array([[80, 88], [82, 81], [84, 75], [86, 83], [75, 81]])
+# 平时成绩占40% 期末成绩占60%, 计算结果
+q = np.array([[0.4], [0.6]])
+result = np.dot(stus_score, q)
+print("最终结果为:")
+print(result)
+
+print("v1为:")
+v1 = [[0, 1, 2, 3, 4, 5],
+      [6, 7, 8, 9, 10, 11]]
+print(v1)
+print("v2为:")
+v2 = [[12, 13, 14, 15, 16, 17], 
+      [18, 19, 20, 21, 22, 23]]
+print(v2)
+# 垂直拼接
+result = np.vstack((v1, v2))
+print("v1和v2垂直拼接的结果为")
+print(result)
+
+print("v1为:")
+v1 = [[0, 1, 2, 3, 4, 5],
+      [6, 7, 8, 9, 10, 11]]
+print(v1)
+print("v2为:")
+v2 = [[12, 13, 14, 15, 16, 17], 
+      [18, 19, 20, 21, 22, 23]]
+print(v2)
+# 垂直拼接
+result = np.hstack((v1, v2))
+print("v1和v2水平拼接的结果为")
+print(result)
