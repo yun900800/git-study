@@ -103,3 +103,50 @@ stus_score = np.array([[80, 88], [82, 81], [84, 75], [86, 83], [75, 81]])
 stus_score = stus_score > 80
 print(stus_score)
 
+stus_score = np.array([[80, 88], [82, 81], [84, 75], [86, 83], [75, 81]])
+stus_score = np.where(stus_score < 80, 0, 90)
+print(stus_score)
+
+stus_score = np.array([[80, 88], [82, 81], [84, 75], [86, 83], [75, 81]])
+# 求每一列的最大值(0表示列)
+print("每一列的最大值为:")
+result = np.amax(stus_score, axis=0)
+print(result)
+
+print("每一行的最大值为:")
+result = np.amax(stus_score, axis=1)
+print(result)
+
+stus_score = np.array([[80, 88], [82, 81], [84, 75], [86, 83], [75, 81]])
+# 求每一行的最小值(0表示列)
+print("每一列的最小值为:")
+result = np.amin(stus_score, axis=0)
+print(result)
+
+# 求每一行的最小值(1表示行)
+print("每一行的最小值为:")
+result = np.amin(stus_score, axis=1)
+print(result)
+
+stus_score = np.array([[80, 88], [82, 81], [84, 75], [86, 83], [75, 81]])
+# 求每一行的平均值(0表示列)
+print("每一列的平均值:")
+result = np.mean(stus_score, axis=0)
+print(result)
+
+# 求每一行的平均值(1表示行)
+print("每一行的平均值:")
+result = np.mean(stus_score, axis=1)
+print(result)
+
+stus_score = np.array([[80, 88], [82, 81], [84, 75], [86, 83], [75, 81]])
+# 求每一行的方差(0表示列)
+print("每一列的方差:")
+result = np.std(stus_score, axis=0)
+print(result)
+
+# 求每一行的方差(1表示行)
+print("每一行的方差:")
+result = np.std(stus_score, axis=1)
+print(result)
+
