@@ -201,3 +201,18 @@ print(v2)
 result = np.hstack((v1, v2))
 print("v1和v2水平拼接的结果为")
 print(result)
+
+
+x = np.random.rand(4,4)
+print(x)
+randMat = np.mat(x)
+print(randMat)
+randMat_i = randMat.I
+print(randMat_i)
+
+result = randMat*randMat_i
+print(result)
+
+result1 = randMat*randMat.I-np.eye(4)
+print(result1)
+print(np.eye(4))
