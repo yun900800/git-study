@@ -21,3 +21,19 @@ print(data_3_4)
 print(data_3_4[:2])
 # 打印第一列数据
 print(data_3_4[:][1])
+print(data_3_4.shape)
+print(data_3_4.dtypes)
+print(data_3_4.ndim)
+print(data_3_4.index)
+print(data_3_4.columns)
+print(data_3_4.values)
+
+# 打印前5个
+print("-->前2个:")
+print(data_3_4.head(2))
+# 打印后5个
+print("-->后2个:")
+print(data_3_4.tail(2))
+# 打印描述信息(实验中好用)
+print("-->描述信息:")
+print(data_3_4.describe())
