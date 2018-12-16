@@ -1,8 +1,9 @@
 import knn
 import numpy as np
-import dict
+#import dict
 import matplotlib
 import matplotlib.pyplot as plt
+
 group,labels = knn.createDataSet()
 result = knn.classify0([0,0],group,labels,3)
 print(result)
@@ -21,3 +22,6 @@ print(result)
 # plt.ylabel('Liters of Ice Cream Consumed Per Week')
 # plt.show()
 knn.datingClassTest()
+# returnVec = knn.img2vector('testDigits/0_13.txt')
+# print(returnVec[0,0:31])
+knn.handwritingClassTest()
