@@ -38,3 +38,11 @@ d = bayes.setOfWords2Vec(c,a[0])
 print(d)
 d = bayes.setOfWords2Vec(c,a[3])
 print(d)
+
+trainMat = []
+for postingDoc in a:
+   trainMat.append(bayes.setOfWords2Vec(c,postingDoc)) 
+p0Vec, p1Vec, pAbusive = bayes.trainNB0(trainMat,b)
+print(p0Vec)
+print(p1Vec)
+print(pAbusive)
