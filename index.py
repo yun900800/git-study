@@ -3,6 +3,7 @@ import numpy as np
 #import dict
 import matplotlib
 import matplotlib.pyplot as plt
+import bayes
 
 group,labels = knn.createDataSet()
 result = knn.classify0([0,0],group,labels,3)
@@ -21,7 +22,19 @@ print(result)
 # plt.xlabel('Percentage of Time Spent Playing Video Games')
 # plt.ylabel('Liters of Ice Cream Consumed Per Week')
 # plt.show()
-knn.datingClassTest()
+
+# knn.datingClassTest()
 # returnVec = knn.img2vector('testDigits/0_13.txt')
 # print(returnVec[0,0:31])
-knn.handwritingClassTest()
+# knn.handwritingClassTest()
+
+a , b = bayes.loadDataSet()
+print(a)
+
+c = bayes.createVocabList(a)
+print(c)
+
+d = bayes.setOfWords2Vec(c,a[0])
+print(d)
+d = bayes.setOfWords2Vec(c,a[3])
+print(d)
