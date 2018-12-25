@@ -5,6 +5,9 @@ import matplotlib
 import matplotlib.pyplot as plt
 import bayes
 
+from hotel import MyClass
+from complex import Complex,Test,People,student,sample
+
 group,labels = knn.createDataSet()
 result = knn.classify0([0,0],group,labels,3)
 print(result)
@@ -46,3 +49,27 @@ p0Vec, p1Vec, pAbusive = bayes.trainNB0(trainMat,b)
 print(p0Vec)
 print(p1Vec)
 print(pAbusive)
+
+# 实例化类
+x = MyClass()
+ 
+# 访问类的属性和方法
+print("MyClass 类的属性 i 为：", x.i)
+print("MyClass 类的方法 f 输出为：", x.f())
+
+x = Complex(3.0, -4.5)
+print(x.r, x.i)   # 输出结果：3.0 -4.5
+t = Test()
+t.prt()
+t.prt1()
+
+# 实例化类
+p = People('runoob',10,30)
+p.speak()
+
+s = student('ken',10,60,3)
+s.speak()
+
+test = sample("Tim",25,80,4,"Python")
+test.speak()   #方法名同，默认调用的是在括号中排前地父类的方法
+
