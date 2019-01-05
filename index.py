@@ -1,5 +1,6 @@
 import knn
 import trees
+import treePlotter
 import numpy as np
 
 #import dict
@@ -30,13 +31,17 @@ import matplotlib.pyplot as plt
 
 myData,label = trees.createDataSet()
 # myData[0][-1] ='maybe'
-# result= trees.calShannonEnt(myData)
-# print('result',result)
+result= trees.calShannonEnt(myData)
+print('result',result)
 
 # result = trees.splitDataSet(myData,0,1)
 # print('result',result)
 # result = trees.splitDataSet(myData,0,0)
 # print('result',result)
 
-result = trees.chooseBestFeatureToSplit(myData)
-print('result',result)
+# result = trees.chooseBestFeatureToSplit(myData)
+# print('result',result)
+myTree = trees.createTree(myData,label)
+print('myTree',myTree)
+
+treePlotter.createPlot()
