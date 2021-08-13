@@ -1,7 +1,7 @@
 
 example.property: "{cipher}b3e9b76c3d6d7bc289916bc59b82c06841ca9918150fbd101ede3d41f5e280b9"
 spring.jpa.database: "h2"
-spring.jpa.hibernate.ddl-auto: "update"
+spring.jpa.hibernate.ddl-auto: "create-drop"
 spring.jpa.show-sql: "true"
 spring.data.jpa.repositories.enabled: "true"
 spring.jpa.generate-ddl: "true"
